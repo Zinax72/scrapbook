@@ -1,0 +1,21 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-deep-purple: #1a0d2e;
+  --color-mid-purple: #2d1b4e;
+  --color-near-black: #0d0614;
+
+  --color-blush-pink: #ff6fb5;
+  --color-lavender-pink: #e0aaff;
+  --color-purple-pink: #c77dff;
+
+  --color-pure-white: #ffffff;
+  --color-soft-white: #f4f0fa;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+
+  --shadow-pink-glow: 0 0 20px rgba(255, 111, 181, 0.5);
+  --shadow-lavender-glow: 0 0 25px rgba(224, 170, 255, 0.4);
+}
