@@ -1,5 +1,18 @@
-
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Cheese Milky";
+  src: url("/scrapbook/fonts/CheeseMilky.ttf") format("truetype");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
 
 @theme {
   --color-deep-purple: #1a0d2e;
@@ -12,8 +25,9 @@
 
   --color-pure-white: #ffffff;
   --color-soft-white: #f4f0fa;
+  --color-card-bg: #150a24;
 
-  --font-heading: "Playfair Display", serif;
+  --font-heading: "Cheese Milky", cursive;
   --font-body: "Poppins", sans-serif;
 
   --shadow-pink-glow: 0 0 20px rgba(255, 111, 181, 0.5);
