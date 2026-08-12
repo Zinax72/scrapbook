@@ -31,9 +31,9 @@ function App() {
   }
 
   return (
-    <div className="relative min-h-screen">
-      <div className="fixed inset-0 bg bg-[url(./assets/bgpic.jpg)] bg-cover blur-[1px]" />
-      <div className="fixed inset-0 bg-gradient-to-b from-near-black/85 via-deep-purple/55 to-near-black/90" />
+    <div className="relative min-h-[100dvh]">
+      <div className="absolute inset-0 min-h-[100dvh] bg-[url(./assets/bgpic.jpg)] bg-cover blur-[1px]" />
+      <div className="absolute inset-0 min-h-[100dvh] bg-gradient-to-b from-near-black/85 via-deep-purple/55 to-near-black/90" />
 
       <div className="relative z-10">
         <div className="flex flex-col items-center justify-center pt-20 pb-10">
