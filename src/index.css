@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Cheese Milky";
-  src: url("/scrapbook/fonts/CheeseMilky.ttf") format("truetype");
+  src: url("/scrapbook/fonts/CheeseMilky.otf") format("opentype");
 }
 
 ::-webkit-scrollbar {

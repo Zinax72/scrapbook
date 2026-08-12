@@ -10,7 +10,7 @@ export const dates = [
     title: "First Meet",
     caption: "Alphas 🐺",
     coverImage: `${base}photos/chilis/cover.jpg`,
-    photos: generatePhotos("chilis", 11)
+    photos: generatePhotos("chilis", 7)
     },
 
     {
