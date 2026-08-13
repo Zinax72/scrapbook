@@ -31,7 +31,7 @@ function PhotoLightbox ({ date, onClose }) {
           <img
             src={date.photos[currentIndex]}
             alt={`${date.title} ${currentIndex + 1}`}
-            className="w-64 md:w-80 h-64 md:h-80 object-cover"
+            className="w-64 h-64 object-cover"
           />
           <p className="text-center mt-3 text-deep-purple font-heading font-bold text-2xl">{date.caption}</p>
         </div>
