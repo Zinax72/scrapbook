@@ -27,13 +27,13 @@ function PhotoLightbox ({ date, onClose }) {
           className="text-soft-white text-3xl md:text-4xl hover:text-blush-pink transition">←
           </button>
 
-        <div className="bg-[#fdfdfa] p-4 pb-12 rounded-sm shadow-2xl -rotate-2">
+        <div className="bg-[url(./assets/framebg.jpg)] bg-cover p-4 pb-8 rounded-sm shadow-2xl -rotate-2">
           <img
             src={date.photos[currentIndex]}
             alt={`${date.title} ${currentIndex + 1}`}
             className="w-64 md:w-80 h-64 md:h-80 object-cover"
           />
-          <p className="text-center mt-3 text-gray-700 font-heading font-bold text-md">{date.caption}</p>
+          <p className="text-center mt-3 text-deep-purple font-heading font-bold text-2xl">{date.caption}</p>
         </div>
 
         <button

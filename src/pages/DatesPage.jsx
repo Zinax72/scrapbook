@@ -7,7 +7,7 @@ function DatesPage() {
     const [selectedDate, setSelectedDate] = useState(null);
 
     return (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-6 max-w-2xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 pb-15 max-w-max mx-auto">
             {dates.map((date) => (
                 <DateCard key={date.id} date={date} onClick={setSelectedDate} />
             ))}

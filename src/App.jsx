@@ -13,16 +13,21 @@ function App() {
   const contentRef = useRef(null);
   const navRef = useRef(null);
 
-  useEffect(() => {
-    contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }, [activeTab]);
-
-  useEffect(() => {
-    contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }, [activeTab]);
+   useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+  }, []);
 
   function handleTabClick(tabId) {
-    setActiveTab(tabId);
+    if (activeTab === tabId) {
+      setActiveTab(null);
+      window.scrollTo({top: 0, behavior: "smooth" });
+    } else {
+      setActiveTab(tabId) 
+        navRef.current?.scrollIntoView({behavior: "smooth", block: "start" });
+    }
   }
 
   function handlePhotoClick(dateId) {
@@ -32,8 +37,8 @@ function App() {
 
   return (
     <div className="relative min-h-[100dvh]">
-      <div className="absolute inset-0 min-h-[100dvh] bg-[url(./assets/bgpic.jpg)] bg-cover blur-[1px]" />
-      <div className="absolute inset-0 min-h-[100dvh] bg-gradient-to-b from-near-black/85 via-deep-purple/55 to-near-black/90" />
+      <div className="fixed inset-0 min-h-[100dvh] bg-[url(./assets/bgpic.jpg)] bg-cover blur-[1px]" />
+      <div className="fixed inset-0 min-h-[100dvh] bg-gradient-to-b from-near-black/85 via-deep-purple/55 to-near-black/90" />
 
       <div className="relative z-10">
         <div className="flex flex-col items-center justify-center pt-20 pb-10">
@@ -46,7 +51,7 @@ function App() {
 
         
 
-        <section ref={contentRef}>
+        <section ref={contentRef} className='min-h-[100vh] flex items-center justify-center pb-70'>
           {activeTab === "dates" && (
             <DatesPage selectedDateId={selectedDateId} />
           )}

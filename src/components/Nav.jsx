@@ -6,7 +6,7 @@ function Nav ({ activeTab, onTabClick}) {
     ];
 
     return (
-        <nav className="sticky flex justify-center place-items-end gap-5 md:gap-10 p-4">
+        <nav className="sticky top-0 z-20 flex justify-center place-items-end gap-5 md:gap-10 p-4">
             {tabs.map((tab) => (
                 <button 
                 key={tab.id}
