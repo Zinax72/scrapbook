@@ -5,6 +5,16 @@
   src: url("/scrapbook/fonts/CheeseMilky.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Simple Handmade";
+  src: url("/scrapbook/fonts/SimpleHandmade.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Elegant Bloom";
+  src: url("/scrapbook/fonts/ElegantBloom.otf") format("opentype");
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -26,8 +36,11 @@ html {
   --color-pure-white: #ffffff;
   --color-soft-white: #f4f0fa;
   --color-card-bg: #150a24;
+  --color-text-muted: #9c8bb5;
 
   --font-heading: "Cheese Milky", cursive;
+  --font-reasons: "Simple Handmade";
+  --font-test: "Elegant Bloom";
   --font-body: "Poppins", sans-serif;
 
   --shadow-pink-glow: 0 0 20px rgba(255, 111, 181, 0.5);

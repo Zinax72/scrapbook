@@ -2,19 +2,18 @@ import { photos } from "../data/photos";
 
 function GalleryPage() {
     return (
-        <div className="min-h-screen p-8">
-            <div className="grid grid-cols-5 gap-6 max-w-4xl mx-auto auto-rows-[100px]">
+        <div className="min-h-screen p-4 md:p-8">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6 max-w-4xl mx-auto auto-rows-[70px] md:auto-rows-[100px]">
                 {photos.map((photo, i) => (
-
                     <div
                     key={photo.id}
                     className={`
                         bg-mid-purple p-2 rounded-sm shadow-2xl border-4 border-lavender-pink/60
-                        ${i % 5 === 0 ? "row-span-4 col-span-3" : ""}
-                        ${i % 5 === 1 ? "row-span-3 col-span-2" : ""}
-                        ${i % 5 === 2 ? "row-span-2 col-span-2" : ""}
-                        ${i % 5 === 3 ? "row-span-3 col-span-2" : ""}
-                        ${i % 5 === 4 ? "row-span-3 col-span-2" : ""}
+                        ${i % 5 === 0 ? "row-span-3 col-span-2 md:row-span-4 md:col-span-3" : ""}
+                        ${i % 5 === 1 ? "row-span-2 col-span-1 md:row-span-3 md:col-span-2" : ""}
+                        ${i % 5 === 2 ? "row-span-2 col-span-1 md:row-span-2 md:col-span-2" : ""}
+                        ${i % 5 === 3 ? "row-span-2 col-span-1 md:row-span-3 md:col-span-2" : ""}
+                        ${i % 5 === 4 ? "row-span-2 col-span-1 md:row-span-3 md:col-span-2" : ""}
                         `}
                     >   
                         <img 

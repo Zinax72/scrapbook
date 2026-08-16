@@ -11,7 +11,7 @@ function Nav ({ activeTab, onTabClick}) {
                 <button 
                 key={tab.id}
                 onClick={() => onTabClick(tab.id)}
-                className={activeTab === tab.id ? "text-lavender-pink border border-black rounded-full w-24 h-12 md:w-32 md:h-16 bg-mid-purple " : "text-soft-white border border-black rounded-full w-24 h-12 md:w-32 md:h-16 bg-deep-purple"}
+                className={activeTab === tab.id ? "text-lavender-pink border border-black rounded-full w-24 h-12 md:w-32 md:h-16 bg-mid-purple" : "text-soft-white border border-black rounded-full w-24 h-12 md:w-32 md:h-16 bg-deep-purple"}
             >
                 {tab.label}
             </button>
