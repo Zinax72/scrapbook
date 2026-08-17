@@ -43,8 +43,4 @@ export const reasons = [
         id: 10,
         text: "I don't have to pretend when I'm with you."
     },
-    {
-        id: 11,
-        text: "lorem ipsum test text blabah acdasdada"
-    }
 ]
