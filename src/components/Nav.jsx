@@ -2,7 +2,7 @@ function Nav ({ activeTab, onTabClick}) {
     const tabs = [
         { id: "dates", label: "Dates"},
         { id: "gallery", label: "Museum"},
-        { id: "reasons", label: "Reasons"},
+        { id: "reasons", label: "Whys"},
     ];
 
     return (

@@ -5,6 +5,7 @@ import Hero from "./components/Hero"
 import DatesPage from "./pages/DatesPage"
 import GalleryPage from "./pages/GalleryPage"
 import ReasonsPage from "./pages/ReasonsPage"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -51,16 +52,21 @@ function App() {
 
         
 
-        <section ref={contentRef} className='min-h-[100vh] flex items-center justify-center pb-70'>
-          {activeTab === "dates" && (
-            <DatesPage selectedDateId={selectedDateId} />
-          )}
+        <section ref={contentRef} className='min-h-[85vh] flex flex-col items-center justify-center'>
+          
+          <div className="flex-1 flex items-center justify-center w-full">
+              {activeTab === "dates" && (
+              <DatesPage selectedDateId={selectedDateId} />
+            )}
 
-          {activeTab === "gallery" && (
-            <GalleryPage onSelectPhoto={handlePhotoClick} />
-          )}
+            {activeTab === "gallery" && (
+              <GalleryPage onSelectPhoto={handlePhotoClick} />
+            )}
 
-          {activeTab === "reasons" && <ReasonsPage />}
+            {activeTab === "reasons" && <ReasonsPage />}
+          </div>
+          
+          <Footer />
         </section>
       </div>
     </div>
