@@ -6,18 +6,24 @@ function generatePhotos(folder, count) {
 
 export const dates = [
     {
-    id: "chilis",
-    title: "First Meet",
-    caption: "Alphas🐺",
-    coverImage: `${base}photos/chilis/cover.jpg`,
-    photos: generatePhotos("chilis", 7)
+        id: "chilis",
+        title: "First Meet",
+        caption: "Alphas🐺",
+        coverImage: `${base}photos/chilis/cover.jpg`,
+        photos: generatePhotos("chilis", 7)
     },
-
     {
         id: "spiderman",
         title: "First Date",
         caption: "Spidey Date🕸️",
         coverImage: `${base}photos/spiderman/cover.jpg`,
-        photos: generatePhotos("spiderman", 11)
+        photos: generatePhotos("spiderman", 12)
     },
+    {
+        id: "movienight",
+        title: "Movie Night",
+        caption: "Virtual Dates <3",
+        coverImage: `${base}photos/movienight/cover.jpg`,
+        photos: generatePhotos("movienight", 1)
+    }
 ];
