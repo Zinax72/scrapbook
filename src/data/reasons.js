@@ -43,4 +43,16 @@ export const reasons = [
         id: 10,
         text: "I don't have to pretend when I'm with you."
     },
+    {
+        id:  11,
+        text:  "You genuinely make me a better person"
+    },
+    {
+        id: 12,
+        text: "you're patient with me and my communication skills hehe"
+    },
+    {
+        id: 13,
+        text: "i have no clue how or why you still accept me but I am lucky that u do and I want to change for the better because of it"
+    },
 ]
