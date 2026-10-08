@@ -10,6 +10,11 @@
   src: url("/scrapbook/fonts/ElegantBloom.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Simple Handmade";
+  src: url("/scrapbook/fonts/SimpleHandmade.otf") format("opentype");
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -35,6 +40,7 @@ html {
 
   --font-heading: "Cheese Milky", cursive;
   --font-reasons: "Elegant Bloom";
+  --font-test: "Simple Handmade";
   --font-body: "Poppins", sans-serif;
 
   --shadow-pink-glow: 0 0 20px rgba(255, 111, 181, 0.5);

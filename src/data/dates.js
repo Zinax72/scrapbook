@@ -25,5 +25,12 @@ export const dates = [
         caption: "Virtual Dates <3",
         coverImage: `${base}photos/movienight/cover.jpg`,
         photos: generatePhotos("movienight", 1)
+    },
+    {
+        id: "mcad",
+        title: "Mall of Asia",
+        caption: "MCAD Part 1",
+        coverImage: `${base}photos/mcad/cover.jpg`,
+        photos: generatePhotos("mcad", 13)
     }
 ];

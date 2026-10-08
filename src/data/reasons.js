@@ -55,4 +55,12 @@ export const reasons = [
         id: 13,
         text: "i have no clue how or why you still accept me but I am lucky that u do and I want to change for the better because of it"
     },
+    {
+        id: 14,
+        text: "you're my anchor e, you keep me calm and safe when everything feels overwhelming"
+    },
+    {
+        id: 15,
+        text: "for better or for worse, as long as it's with you."
+    }
 ]
