@@ -34,7 +34,7 @@ function ReasonsPage() {
                         <img
                         src={reason.image}
                         alt=""
-                        className="w-full max-h-64 object-contain rounded-md" />
+                        className="w-full h-full object-cover rounded-md" />
                     )}
                     <p className="text-white font-reasons text-lg md:text-xl">{reason.text}</p>
                 </div>

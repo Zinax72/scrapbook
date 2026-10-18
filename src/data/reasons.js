@@ -29,7 +29,7 @@ export const reasons = [
     }, 
     {
         id: 7,
-        text: "SUPERNATURAL FAN LIKE OMGGGGGG"
+        text: "got me hooked into Stranger Things"
     },
     {
         id: 8,
@@ -62,5 +62,17 @@ export const reasons = [
     {
         id: 15,
         text: "for better or for worse, as long as it's with you."
+    },
+    {
+        id: 16,
+        image: `${base}photos/reasons/3.jpg`
+    },
+    {
+        id: 17, 
+        image: `${base}photos/reasons/4.jpg`
+    },
+    {
+        id: 18,
+        image: `${base}photos/reasons/5.jpg`        
     }
 ]

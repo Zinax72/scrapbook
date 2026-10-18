@@ -7,5 +7,5 @@ function generatePhotos(folder, count) {
     }));
 }
 
-export const photos = generatePhotos("museum", 31);
+export const photos = generatePhotos("museum", 47);
 

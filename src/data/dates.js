@@ -32,5 +32,12 @@ export const dates = [
         caption: "MCAD Part 1",
         coverImage: `${base}photos/mcad/cover.jpg`,
         photos: generatePhotos("mcad", 13)
+    },
+    {
+        id: "bday",
+        title: "20th Birthday",
+        caption: "Best Birthday Ever",
+        coverImage: `${base}photos/bday/cover.jpg`,
+        photos: generatePhotos("bday", 12)
     }
 ];
